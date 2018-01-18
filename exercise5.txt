@@ -1,0 +1,5 @@
+$mysql -uroot -p
+create database vacation
+grant all on vacation.* to guest@localhost
+exit 
+$pysql vacation < ~/downloads/vacation.sql
