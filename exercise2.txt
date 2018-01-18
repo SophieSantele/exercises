@@ -1,0 +1,17 @@
+UNF -> zie oef
+
+1NF
+staff(staffNo,dentistName,surgerNO)
+patient(patientNo,patientName,appointment date,time, surgeryNO)
+
+2NF
+= 1nf
+
+3NF
+staff(staffNo,dentistName,surgerNO)
+patient(patientNo,patientName,surgeryNO)
+surg(appointment date,time, surgeryNO)
+
+BCNF
+=3NF
+
