@@ -1,0 +1,20 @@
+1NF
+Patient(patientNo,fullname)
+ward(wardname, wardNO)
+drug(drugNO,name,description, dosage,method of admin)
+startdate(drugNO,unitsperdate,finish date)
+
+2NF
+Patient(patientNo,fullname)
+ward(wardname, wardNO, pateintNo )
+drug(patientNO, drugNO,name,description, dosage,method of admin)
+startdate(drugNO,unitsperdate,finish date)
+
+3NF
+=2NF
+
+BCNF
+Patient(patientNo,fullname,wardNO)
+ward(wardname, wardNO )
+drug(patientNO, drugNO,name,description, dosage,method of admin)
+startdate(drugNO,unitsperdate,finish date)
